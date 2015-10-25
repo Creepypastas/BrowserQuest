@@ -6,91 +6,91 @@ define(['item'], function(Item) {
         Sword2: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.SWORD2, "weapon");
-                this.lootMessage = "You pick up a steel sword";
+                this.lootMessage = "Obtuviste una espada de acero";
             },
         }),
 
         Axe: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.AXE, "weapon");
-                this.lootMessage = "You pick up an axe";
+                this.lootMessage = "Obtuviste un hacha";
             },
         }),
 
         RedSword: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.REDSWORD, "weapon");
-                this.lootMessage = "You pick up a blazing sword";
+                this.lootMessage = "Obtuviste una espada en llamas";
             },
         }),
 
         BlueSword: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.BLUESWORD, "weapon");
-                this.lootMessage = "You pick up a magic sword";
+                this.lootMessage = "Obtuviste una espada mágica";
             },
         }),
 
         GoldenSword: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.GOLDENSWORD, "weapon");
-                this.lootMessage = "You pick up the ultimate sword";
+                this.lootMessage = "Obtuviste la espada máxima";
             },
         }),
 
         MorningStar: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.MORNINGSTAR, "weapon");
-                this.lootMessage = "You pick up a morning star";
+                this.lootMessage = "Obtuviste la estrella de la mañana";
             },
         }),
 
         LeatherArmor: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.LEATHERARMOR, "armor");
-                this.lootMessage = "You equip a leather armor";
+                this.lootMessage = "Tienes armadura de cuero";
             },
         }),
 
         MailArmor: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.MAILARMOR, "armor");
-                this.lootMessage = "You equip a mail armor";
+                this.lootMessage = "Tienes armadura de malla";
             },
         }),
 
         PlateArmor: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.PLATEARMOR, "armor");
-                this.lootMessage = "You equip a plate armor";
+                this.lootMessage = "Tienes armadura de metal";
             },
         }),
 
         RedArmor: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.REDARMOR, "armor");
-                this.lootMessage = "You equip a ruby armor";
+                this.lootMessage = "Tienes armadura de rubí";
             },
         }),
 
         GoldenArmor: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.GOLDENARMOR, "armor");
-                this.lootMessage = "You equip a golden armor";
+                this.lootMessage = "Tienes armadura de oro";
             },
         }),
 
         Flask: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.FLASK, "object");
-                this.lootMessage = "You drink a health potion";
+                this.lootMessage = "Bebiste una poción de salud";
             },
         }),
 
         Cake: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.CAKE, "object");
-                this.lootMessage = "You eat a cake";
+                this.lootMessage = "Comiste un pastel";
             },
         }),
 
@@ -104,7 +104,7 @@ define(['item'], function(Item) {
         FirePotion: Item.extend({
             init: function(id) {
                 this._super(id, Types.Entities.FIREPOTION, "object");
-                this.lootMessage = "You feel the power of Firefox!";
+                this.lootMessage = "¡Siente el poder de Firefox!";
             },
 
             onLoot: function(player) {
