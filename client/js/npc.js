@@ -2,24 +2,24 @@ define(['character'], function(Character) {
 
     var NpcTalk = {
         "guard": [
-            "Hello there",
-            "We don't need to see your identification",
-            "You are not the player we're looking for",
-            "Move along, move along..."
+            "¡Pasa!",
+            "No necesitamos ver tu identificacin",
+            "No eres el jugador a quien estamos buscando",
+            "Muévete, muévete..."
         ],
 
         "king": [
-            "Hi, I'm the King",
-            "I run this place",
-            "Like a boss",
-            "I talk to people",
-            "Like a boss",
-            "I wear a crown",
-            "Like a boss",
-            "I do nothing all day",
-            "Like a boss",
-            "Now leave me alone",
-            "Like a boss"
+            "Hola, soy el Rey",
+            "Yo dirijo este lugar,",
+            "soy el jefe",
+            "Hablo con la gente",
+            "como jefe",
+            "Uso corona",
+            "como jefe",
+            "Flojeo todo el día",
+            "como jefe",
+            "Ahora déjame a solas",
+            "como jefe"
         ],
 
         "villagegirl": [
@@ -90,7 +90,7 @@ define(['character'], function(Character) {
 				"Better not use your outfit as a deterrent,",
 				"The goons you'll meet will attack you whatever you look like."
 			]}
-			
+
 		],
 
         "nyan": [
@@ -194,7 +194,7 @@ define(['character'], function(Character) {
 			}
             this.talkIndex = 0;
         },
-        
+
         selectTalk: function(game){
 			var change = false;
 			if(this.discourse != -1){
