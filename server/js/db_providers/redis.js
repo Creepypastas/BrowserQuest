@@ -190,6 +190,14 @@ module.exports = DatabaseHandler = cls.Class.extend({
         var userKey = "u:" + player.name;
         var curTime = new Date().getTime();
 
+        // Check if username is reserved
+        // TODO: Customize userexists message
+        if(Utils.isReservedName(player.name)){
+          player.connection.sendUTF8("userexists");
+          player.connection.close("Username not available: " + player.name);
+          return;
+        }
+
         // Check if username is taken
         client.sismember('usr', player.name, function(err, reply) {
             if(reply === 1) {

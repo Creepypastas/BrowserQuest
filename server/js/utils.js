@@ -4,6 +4,19 @@ var Utils = {};
 
 module.exports = Utils;
 
+Utils.reserverNames = ['','slenderman','mautematico','rompecabezas','estrella','sangre','calamardo','bob','ben','creepy','creepypastas','creepypasta','admin','administrador','jeff','jeffthekiller','nina','killer','owner'];
+
+Utils.alpaString = function (str){
+    var nonLeters = /[^a-z]/gi;
+    return str.replace(nonLeters, '');
+};
+
+Utils.isReservedName = function (name){
+    var alpaName = Utils.alpaString(name);
+    alpaName.toLowerCase();
+    return (Utils.reserverNames.indexOf(alpaName) > -1)
+};
+
 Utils.sanitize = function (string) {
     // Strip unsafe tags, then escape as html entities.
     return sanitizer.escape(sanitizer.sanitize(string));
