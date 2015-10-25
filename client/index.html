@@ -14,7 +14,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 * Should work in latest versions of Firefox, Chrome, Safari, Opera, Safari Mobile and Firefox for Android
 
  -->
-<html lang="en">
+<html lang="es">
 	<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
@@ -23,10 +23,10 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
         <link rel="icon" type="image/png" href="img/common/favicon.png">
         <meta property="og:title" content="BrowserQuest">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://browserquest.mozilla.org/">
+        <meta property="og:url" content="http://bq.creepypastas.com/">
         <meta property="og:image" content="http://browserquest.mozilla.org/img/common/promo-title.jpg">
         <meta property="og:site_name" content="BrowserQuest">
-        <meta property="og:description" content="Play Mozilla's BrowserQuest, an HTML5 massively multiplayer game demo powered by WebSockets!">
+        <meta property="og:description" content="Juega Creepypastas BQ, un juego HTML5 multijugador, basado en el demo de Mozilla">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/achievements.css" type="text/css">
 
@@ -60,7 +60,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 	<body class="intro">
 	    <noscript>
 	       <div class="alert">
-	           You need to enable JavaScript to play BrowserQuest.
+	           Es necesario que actives JavaScript para jugar BrowserQuest.
 	       </div>
 	    </noscript>
 	    <a id="moztab" class="clickable" target="_blank" href="http://www.mozilla.org/"></a>
@@ -72,7 +72,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 	        </h1>
 	        <article id="portrait">
 	            <p>
-	               Please rotate your device to landscape mode
+	               Por favor gira tu dispositivo al modo horizontal
 	            </p>
 	            <div id="tilt"></div>
 	        </article>
@@ -82,7 +82,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
                     <article id="createcharacter">
           	           <h1>
           	               <span class="left-ornament"></span>
-          	               Create New Character
+          	               Crear un personaje nuevo
           	               <span class="right-ornament"></span>
                          </h1>
                          <form action="none" method="get" accept-charset="utf-8">
@@ -92,7 +92,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
                              <input type="email" id="emailinput" class="stroke" name="player-email" placeholder="Email address" maxlength="48">
                          </form>
                          <div class="play">
-                           <span class="link">Create</span>
+                           <span class="link">Crear</span>
                          </div>
                          <div class="validation-summary"></div>
                     </article>
@@ -107,120 +107,125 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
                              <input type="password" id="loginpwinput" class="stroke" name="player-loginpw" placeholder="Password" maxlength="15">
                          </form>
                          <div class="play">
-                           <span class="link">Login</span>
+                           <span class="link">Entrar</span>
                            <img src="img/common/spinner2.gif">
                          </div>
                          <div class="validation-summary"></div>
                          <div id="create-new">
-                            <span class="link">New Character</span>
+                            <span class="link">Nuevo jugador</span>
                          </div>
                     </article>
                     <article id="confirmation">
           	           <h1>
           	               <span class="left-ornament"></span>
-                           You need to accept the following terms of usage before creating a new character.<br>
-                           None right now - just Continue!<br><br>
+													 Para jugar debes estar dispuesto a entregarnos tu alma.<br>
+                           ¡La cuidaremos mucho!<br><br>
           	               <span class="right-ornament"></span>
                          </h1>
                          <div id="continue">
-                         <span class="link">Continue</span>
+                         <span class="link">Continuar</span>
                          </div>
                          <div id="cancel">
-                            <span class="link">Cancel</span>
+                            <span class="link">Cancelar</span>
                          </div>
                     </article>
     	            <article id="credits">
         	            <h1>
          	               <span class="left-ornament"></span>
          	               <span class="title">
-         	                   Made for Mozilla by <a target="_blank" class="stroke clickable" href="http://www.littleworkshop.fr/">Little Workshop</a>
+         	                   Juego original hecho para Mozilla por <a target="_blank" class="stroke clickable" href="http://www.littleworkshop.fr/">Little Workshop</a>
          	               </span>
          	               <span class="right-ornament"></span>
                         </h1>
                         <div id="authors">
                             <div id="guillaume">
                                 <div class="avatar"></div>
-                                Pixels by
+                                Arte por
                                 <a class="stroke clickable" target="_blank" href="http://twitter.com/glecollinet">Guillaume Lecollinet</a>
                             </div>
-                            <div id="franck">
+														<div id="franck">
                                 <div class="avatar"></div>
-                                Code by
+                                Código por
                                 <a class="stroke clickable" target="_blank" href="http://twitter.com/whatthefranck">Franck Lecollinet</a>
+                            </div>
+														<div id="creepypastas-av">
+                                <div class="avatar"></div>
+                                Ligeras modificaciones para
+                                <a class="stroke clickable" target="_blank" href="https://twitter.com/creepypastas">Creepypastas</a>
                             </div>
                         </div>
                         <div id="seb">
 
                             <span id="note"></span>
-                            Music by <a class="clickable" target="_blank" href="http://soundcloud.com/gyrowolf">Terrel O'Brien</a>, <a class="clickable" target="_blank" href="http://blog.dayjo.org">Joel Day</a>, <a class="clickable" target="_blank" href="http://www.dantilden.com">Dan Tilden</a>, &amp; <a target="_blank" class="clickable" href="http://soundcloud.com/aaron-anderson-11">Aaron Krogh</a>
+                            Sonidos por <a class="clickable" target="_blank" href="http://soundcloud.com/gyrowolf">Terrel O'Brien</a>, <a class="clickable" target="_blank" href="http://blog.dayjo.org">Joel Day</a>, <a class="clickable" target="_blank" href="http://www.dantilden.com">Dan Tilden</a>, &amp; <a target="_blank" class="clickable" href="http://soundcloud.com/aaron-anderson-11">Aaron Krogh</a>
 
                         </div>
 	                    <div id="close-credits">
-	                        <span>- click anywhere to close -</span>
+	                        <span>- clic en cualquier sitio para cerrar -</span>
                         </div>
     	            </article>
     	            <article id="about">
         	            <h1>
          	               <span class="left-ornament"></span>
          	               <span class="title">
-         	                   What is BrowserQuest?
+         	                   ¿Qué es BrowserQuest?
          	               </span>
          	               <span class="right-ornament"></span>
                         </h1>
                         <p id="game-desc">
-                            BrowserQuest is a multiplayer game inviting you to explore a
-                            world of adventure from your Web browser.
+                            BrowserQuest es un juego multijugador que te invita a explorar un
+                            mundo de aventuras desde tu navegador.
                         </p>
                         <div class="left">
                             <div class="img"></div>
                             <p>
-                                This demo is powered by HTML5 and WebSockets, which allow for real-time gaming and apps on the Web.
+                                El juego está construido en HTML5 y WebSockets, tecnologías que permiten tener juegos en tiempo real en la Web.
                             </p>
                             <span class="link">
                                 <span class="ext-link"></span>
-                                <a target="_blank" class="clickable" href="http://hacks.mozilla.org/2012/03/browserquest/">Learn more</a> about the technology
+                                <a target="_blank" class="clickable" href="http://hacks.mozilla.org/2012/03/browserquest/">Aprender más</a> sobre estas tecnologías
                             </span>
                         </div>
                         <div class="right">
                             <div class="img"></div>
                             <p>
-                                BrowserQuest is available on Firefox, Chrome, Safari as well as iOS devices and Firefox for Android.
+                                BrowserQuest está disponible para Firefox, Chrome, Safari así como dispositivos iOS y Firefox para Android.
                             </p>
                             <span class="link">
                                 <span class="ext-link"></span>
-                                <a target="_blank" class="clickable" href="http://github.com/browserquest/BrowserQuest">Grab the source</a> on Github
+                                <a target="_blank" class="clickable" href="http://github.com/browserquest/BrowserQuest">Descarga el código fuente</a> en Github
                             </span>
                         </div>
                       <div id="close-about">
-                          <span>- click anywhere to close -</span>
+                          <span>- clic en cualquier sitio para cerrar -</span>
                         </div>
                   </article>
     	            <article id="death">
-                        <p>You are dead...</p>
+                        <p>Has muerto...</p>
     					<div id="respawn" class="button"></div>
     	            </article>
                     <article id="error">
           	           <h1>
           	               <span class="left-ornament"></span>
-          	               Your browser cannot run BrowserQuest!
+          	               ¡Tu navegador no es poderoso!
           	               <span class="right-ornament"></span>
                          </h1>
                          <p>
-                             We're sorry, but your browser does not support WebSockets.<br>
-                             In order to play, we recommend using the latest version of Firefox, Chrome or Safari.
+													 	 Lamentablemente, tu navegador no soporta WebSockets.<br>
+														 Te recomendamos usar la versión más nueva de <strong>Firefox</strong>, Chrome o Safari.
                          </p>
                     </article>
                     <article id="legal">
           	           <h1>
           	               <span class="left-ornament"></span>
-          	               Privacy
+          	               Privacidad
           	               <span class="right-ornament"></span>
                          </h1>
                          <p>
-                             BrowserQuest stores your character name, game achievements and equipment in your browser and does not send them to Mozilla. We do collect server log data (such as IP address) as well as web analytics data. We handle info we receive about you as explained in our <a class="clickable" target="_blank" href="http://www.mozilla.org/en-US/privacy-policy">Privacy Policy</a>.
+                             BrowserQuest almacena el nombre de tu personaje, logros del juego y atuendo en tu navegador y no los envía a Mozilla ni a Creepypastas. Recolectamos información del registro del servidor (como direcciones IP), así como información de analítica web. Manejamos esta información de acuerdo a nuestra <a class="clickable" target="_blank" href="http://creepypastas.com/politica-de-privacidad/">política de privacidad</a>.
                          </p>
  	                    <div id="close-legal">
- 	                        <span>- click anywhere to close -</span>
+ 	                        <span>- clic en cualquier sitio para cerrar -</span>
                          </div>
                     </article>
 	            </div>
@@ -234,15 +239,15 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 		            <div class="close"></div>
 		            <h1>
      	               <span class="left-ornament"></span>
-     	               How to play
+     	               Cómo jugar
      	               <span class="right-ornament"></span>
 	                </h1>
 	                <ul>
-	                   <li><span class="icon"></span>Left click or tap to move, attack and pick up items. Hold SHIFT to attack another player.</li>
-	                   <li><span class="icon"></span>Press ENTER to chat.</li>
-	                   <li><span class="icon"></span>Your character is automatically saved as you play. The blue line on the right is your exp bar.</li>
+	                   <li><span class="icon"></span>Clic primario o toque para mover, atacar y tomar objetos. Mantén presionado SHIFT para atacar a otros jugadores.</li>
+	                   <li><span class="icon"></span>Presiona ENTER para conversar.</li>
+	                   <li><span class="icon"></span>Tu personaje es guardado automáticamente mientras juegas. La línea azul a la derecha es tu barra de experiencia.</li>
 	                </ul>
-	                    <p>- click anywhere to close -</p>
+	                    <p>- clic en cualquier sitio para cerrar -</p>
 		        </article>
 		        <article id="achievements" class="page1 clickable">
 		            <div class="close"></div>
@@ -251,13 +256,13 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
         		        </div>
     		        </div>
     		        <div id="achievements-count" class="stroke">
-    		            Completed
+    		            Completado
     		            <div>
     		                <span id="unlocked-achievements">0</span>
     		                /
     		                <span id="total-achievements"></span>
     		            </div>
-                    Close
+                    Cerrar
     		        </div>
 		            <nav class="clickable">
 		                <div id="previous"></div>
@@ -284,8 +289,8 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
                     <div id="dropTitle">Input drop count.</div>
                     <div align="center">
                         <input type="text" id="dropCount" size="6" maxlength="6">
-                        <span id="dropAccept">&nbsp;Accept&nbsp;</span>
-                        <span id="dropCancel">&nbsp;Cancel&nbsp;</span>
+                        <span id="dropAccept">&nbsp;Acceptar&nbsp;</span>
+                        <span id="dropCancel">&nbsp;Cancelar&nbsp;</span>
                     </div>
                 </div>
  			<div id="achievement-notification">
@@ -293,7 +298,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
     			        <div id="coinsparks"></div>
     			    </div>
     			    <div id="achievement-info">
-        			    <div class="title">New Achievement Unlocked!</div>
+        			    <div class="title">¡Nuevo logro!</div>
         			    <div class="name"></div>
     			    </div>
     			</div>
@@ -311,7 +316,7 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 					    </div>
 					</div>
                     <div id="playercount" class="clickable">
-                        <span class="count">0</span> <span>players</span>
+                        <span class="count">0</span> <span>jugadores</span>
                     </div>
                     <div id="barbuttons">
                         <div id="chatbutton" class="barbutton clickable"></div>
@@ -330,31 +335,31 @@ Mozilla presents an HTML5 mini-MMORPG by Little Workshop http://www.littleworksh
 				</div to accept members for instance… -->
                 <div id="population">
                     <div id="instance-population" class="">
-                        <span>0</span> <span>players</span> in your instance
+                        <span>0</span> <span>jugadores</span> en tu plano
                     </div>
                     <div id="guild-population" class="">
-						<span>0</span> <span>players</span> in «&nbsp;<span id="guild-name"></span>&nbsp;»
+						<span>0</span> <span>jugadores</span> en «&nbsp;<span id="guild-name"></span>&nbsp;»
 					</div>
                     <div id="world-population" class="">
-                        <span>0</span> <span>players</span> total
+                        <span>0</span> <span>jugadores</span> en total
                     </div>
                 </div>
 		    </div>
 		</div>
 		<footer>
-		    <div id="sharing" class="clickable">
+		    <!--div id="sharing" class="clickable">
 		      Share this on
               <a href="http://twitter.com/share?url=http%3A%2F%2Fbrowserquest.mozilla.org&amp;text=Mozilla%27s%20BrowserQuest%3A%20HTML5%20massively%20multiplayer%20adventure%20game%20%23demo%20%23websockets&amp;related=glecollinet:Creators%20of%20BrowserQuest%2Cwhatthefranck" class="twitter"></a>
               <a href="http://www.facebook.com/share.php?u=http://browserquest.mozilla.org/" class="facebook"></a>
-		    </div>
+		    </div-->
 		    <div id="privacy-link" class="clickable">
-		      <span class="dash">&ndash;</span> <span id="toggle-legal">Privacy</span>
+		      <!--span class="dash">&ndash;</span--> <span id="toggle-legal">Privacidad</span>
 		    </div>
-		    <div id="legal-link" class="clickable">
+		    <!--div id="legal-link" class="clickable">
 		      <span class="dash">&ndash;</span> <a class="clickable" target="_blank" href="http://www.mozilla.org/en-US/about/legal.html">Legal notices</a>
-		    </div>
+		    </div-->
 		    <div id="credits-link" class="clickable">
-		      <span class="dash">&ndash;</span> <span id="toggle-credits">Credits</span>
+		      <span class="dash">&ndash;</span> <span id="toggle-credits">Créditos</span>
 		    </div>
 		</footer>
 
