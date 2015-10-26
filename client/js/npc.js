@@ -2,9 +2,9 @@ define(['character'], function(Character) {
 
     var NpcTalk = {
         "guard": [
-            "¡Pasa!",
-            "No necesitamos ver tu identificacin",
-            "No eres el jugador a quien estamos buscando",
+            "Continúa",
+            "Aún no tienes suficiente nivel",
+            "para el reto.mie.do",
             "Muévete, muévete..."
         ],
 
