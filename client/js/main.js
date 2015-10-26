@@ -252,19 +252,19 @@ define(['jquery', 'app', 'entrypoint'], function($, App, EntryPoint) {
 
                 $("#instance-population").find("span").text(worldPlayers);
                 if(worldPlayers == 1) {
-                    setWorldPlayersString("player");
+                    setWorldPlayersString("jugador");
                 } else {
-                    setWorldPlayersString("players");
+                    setWorldPlayersString("jugadores");
                 }
 
                 $("#world-population").find("span:nth-child(1)").text(totalPlayers);
                 if(totalPlayers == 1) {
-                    setTotalPlayersString("player");
+                    setTotalPlayersString("jugador");
                 } else {
-                    setTotalPlayersString("players");
+                    setTotalPlayersString("jugadores");
                 }
             });
-            					
+
             game.onGuildPopulationChange( function(guildName, guildPopulation) {
 				var setGuildPlayersString = function(string) {
 					$("#guild-population").find("span:nth-child(2)").text(string);
@@ -367,7 +367,7 @@ define(['jquery', 'app', 'entrypoint'], function($, App, EntryPoint) {
 
             $(document).keyup(function(e) {
                 var key = e.which;
-                
+
                 if (game.started && !$('#chatbox').hasClass('active'))
                 {
                     switch(key) {
@@ -581,8 +581,8 @@ define(['jquery', 'app', 'entrypoint'], function($, App, EntryPoint) {
                         hpg.css('display', 'block');
 
                         setInterval(function () {
-                            if(((game.player.hitPoints / game.player.maxHitPoints) <= game.hpGuide) && 
-                               (game.healShortCut >= 0) && 
+                            if(((game.player.hitPoints / game.player.maxHitPoints) <= game.hpGuide) &&
+                               (game.healShortCut >= 0) &&
                                Types.isHealingItem(game.player.inventory[game.healShortCut]) &&
                                (game.player.inventoryCount[game.healShortCut] > 0)
                               ) {
