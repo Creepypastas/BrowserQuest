@@ -40,8 +40,8 @@ define(['character'], function(Character) {
 
         "agent": [
             "Investigo el caso de las chicas",
-            "que dicen haber visto a slenderman",
-            "en el bosque...",
+            "que dicen haber visto",
+            "a slenderman en el bosque...",
             "¡Estaré vigilándote!"
         ],
 
