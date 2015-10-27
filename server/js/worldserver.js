@@ -83,7 +83,7 @@ module.exports = World = cls.Class.extend({
             var move_callback = function(x, y) {
                 log.debug(player.name + " is moving to (" + x + ", " + y + ").");
                  var isPVP = self.map.isPVP(x, y);
-                player.flagPVP(isPVP); 
+                player.flagPVP(isPVP);
                player.forEachAttacker(function(mob) {
                      if(mob.target === null){
                         player.removeAttacker(mob);
@@ -284,7 +284,7 @@ module.exports = World = cls.Class.extend({
             log.error("pushToPlayer: player was undefined");
         }
     },
-    
+
     pushToGuild: function(guild, message, except) {
 		var	self = this;
 
@@ -347,15 +347,31 @@ module.exports = World = cls.Class.extend({
         }
     },
 
-    processQueues: function() {
+    /**
+      TODO:
+      find out what packets are being undefined.
+      https://github.com/browserquest/BrowserQuest/issues/194#issuecomment-151327001
+    **/
+    processQueues: function() {
         var self = this,
             connection;
 
-        for(var id in this.outgoingQueues) {
-            if(this.outgoingQueues[id].length > 0) {
-                connection = this.server.getConnection(id);
-                connection.send(this.outgoingQueues[id]);
-                this.outgoingQueues[id] = [];
+        for(var id in self.outgoingQueues) {
+            if (id != null && typeof id !== 'undefined') {
+                if (self.outgoingQueues.hasOwnProperty(id)) {
+                    if (self.outgoingQueues[id].length > 0 && typeof self.outgoingQueues[id] !== 'undefined' && self.outgoingQueues[id] != null) {
+                        if (self.server.getConnection(id) != null && typeof self.server.getConnection(id) !== 'undefined') {
+                            connection = self.server.getConnection(id);
+                            connection.send(self.outgoingQueues[id]);
+                            self.outgoingQueues[id] = [];
+                            //log.info("Sent ID: " + id + " successfully.");
+                        } else {
+                            delete self.server.getConnection(id);
+                        }
+                    }
+                }
+            } else {
+                log.info('worldserver/processQueues:ID is null');
             }
         }
     },
@@ -403,7 +419,7 @@ module.exports = World = cls.Class.extend({
 		}
 		return false;
 	},
-	
+
 	reloadGuild: function(guildId, guildName){
 			var res = false;
 			var lastItem = 0;
@@ -434,7 +450,7 @@ module.exports = World = cls.Class.extend({
 			}
 		return res;
 	},
-	
+
 	addGuild: function(guildName){
 		var res = true;
 		var id=0;//an ID here
@@ -442,7 +458,7 @@ module.exports = World = cls.Class.extend({
 			id = parseInt(key,10)+1;
 			return (guild.name !== guildName);
 		});
-		if (res) { 
+		if (res) {
 			this.guilds[id] = new Guild(id, guildName, this);
 			res = id;
 		}
